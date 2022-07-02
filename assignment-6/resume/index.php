@@ -110,6 +110,16 @@
         'language' => [
             'bangla' => 'Native Proficiency.',
             'english' => 'Professional Working Proficiency.'
+        ],
+        'games' => [
+            'first_game' => 'Table Tennis',
+            'second_game' => 'Badminton'
+        ],
+        'hobbies' => [
+            'first_hobby' => 'Tree Plantation'
+        ],
+        'references' => [
+            'first_reference' => ''
         ]
     ];
     ?>
@@ -303,22 +313,51 @@
             <h3>HOBBIES</h3>
             <hr>
             <br>
-            <li>Tree Plantation</li>
+            <?php
+            foreach ($informations as $key => $information) {
+                if (!empty($key == 'hobbies')) {
+                    foreach ($information as $index => $value) {
+            ?>
+                        <li><?= !empty($value) ? $value : ''; ?></li>
+            <?php
+                    }
+                }
+            }
+            ?>
         </div>
         <div>
             <br>
             <h3>Games</h3>
             <hr>
             <br>
-            <li>Table Tennis</li>
-            <li>Badminton</li>
+            <?php
+            foreach ($informations as $key => $information) {
+                if (!empty($key == 'games')) {
+                    foreach ($information as $index => $value) {
+            ?>
+                        <li><?= !empty($value) ? $value : ''; ?></li>
+            <?php
+                    }
+                }
+            }
+            ?>
         </div>
         <div>
             <br>
             <h3>References</h3>
             <hr>
             <br>
-            <li>No References</li>
+            <?php
+            foreach ($informations as $key => $information) {
+                if (!empty($key == 'references')) {
+                    foreach ($information as $index => $value) {
+            ?>
+                        <li><?= !empty($value) ? $value : 'No References.'; ?></li>
+            <?php
+                    }
+                }
+            }
+            ?>
         </div>
         <br>
         <footer>copyright © shariful, <?= date('Y') ?> </footer>

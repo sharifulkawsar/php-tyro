@@ -1,0 +1,86 @@
+* {
+    padding: 5px;
+    margin: 5px;
+    background-color: white;
+}
+
+.app {
+    width: 80%;
+    height: 70%;
+    margin: 0px auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.center {
+    text-align: center;
+}
+
+a:link,
+a:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+a:hover,
+a:active {
+    background-color: green;
+    color: white;
+}
+
+.disable {
+    pointer-events: none;
+}
+
+.title {
+    padding: 8px 100px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 2px;
+    background-color: #04AA6D;
+    border: 3px solid #04AA6D;
+}
+
+label {
+    font-weight: bold;
+}
+
+select {
+    width: 225px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.gpa_input {
+    width: 200px;
+}
+
+option {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.execute {
+    padding: 8px 100px;
+    text-align: center;
+    font-weight: bold;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.success {
+    color: green;
+    font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}

@@ -94,6 +94,7 @@
                 gpaGrade($operator, $gpa);
             }
             ?>
+            <!-- end php -->
         </div>
     </div>
 </body>
